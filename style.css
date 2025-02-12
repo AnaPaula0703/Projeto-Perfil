@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-fundo: #D8D9BF;
+    --cor-fundo-principal: #2E563C;
+    --cor-letras: #D6E0DF;
+    --cor-hover: #a2a7a6;
+    --color-nav-footer: #223730;
+    --fonte-h1-h2: "Quintessential", serif;
+    --fonte-p-a: "Quintessential", serif;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-letras);
+}
+
+h1,
+h2 {
+    font-family: var(--fonte-h1-h2);
+    font-weight: 400;
+    font-style: normal;
+}
+
+p, a{
+    font-family: var(--fonte-p-a);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    /*automatico para a direita e esquerda*/
+}
+
+
+nav {
+    background-color: var(--color-nav-footer);
+    height: 80px;
+    flex-direction: column;
+    /* Organiza os itens em coluna */
+    align-items: center;
+    /* Centraliza os itens horizontalmente */
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.nome-perfil {
+    display: block;
+    padding: 10px;
+}
+
+#acessos {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.item-acesso a {
+    text-decoration: none;
+    color: var(--cor-letras);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.item-acesso a:hover {
+    text-decoration: none;
+    color: var(--cor-hover);
+}
+
+#img-fundo {
+    background-image: url(./aninha.jpg);
+    height: 600px;
+    background-size: cover;
+}
+
+.principal {
+    background-color: var(--cor-fundo-principal);
+    height: auto;
+    padding: 40px;
+    text-align: center;
+}
+
+.sobreMim {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: larger;
+    margin-top: 10px;
+    align-items: center;
+    text-align: center;
+    text-align: left;
+}
+
+.img-ana {
+    margin-left: 100px;
+    border-radius: 10px;
+}
+
+.descricao {
+    flex: 1;
+    padding: 20px;
+    margin-right: 100px;
+}
+
+#fotos-momentos {
+    margin-top: 25px;
+}
+
+.fotos {
+    display: flex;
+    flex-wrap: wrap;
+    /* Garante que as fotos se ajustem em telas menores */
+    justify-content: center;
+    /* Centraliza as imagens */
+    gap: 10px;
+    /* Espaço entre as fotos */
+    padding: 20px;
+}
+
+.fotos-adicionadas img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: var(--color-nav-footer);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80px;
+    padding-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-top: 5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+li a {
+    margin-left: 10px;
+    padding: 2px;
+    margin-bottom: 1px;
+}
+
+.img-footer {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-conteudo a {
+    text-decoration: none;
+    color: var(--cor-letras);
+    text-align: center;
+}
+
+.footer-conteudo a:hover {
+    text-decoration: none;
+    color: var(--cor-hover);
+}
+
+.contato {
+    display: inline-block;
+}
+
+
+
+/*de 1024 pra cima é para desktop e notebook*/
+/*de 700 até 1024 é uma média para tablets*/
+/*até 420 é para celular/mobile*/
+
+/*Essa estilização só vai funcionar de 1024 para baixo*/
+
+/*@media screen and (max-width: 1024px) 
+
+   
+
+@media screen and (max-width: 420px) 
+
+
+@media screen and (max-width: 300px) 
+    
